@@ -46,14 +46,18 @@ export default {
       this.showScreen = "result";
     },
     onChangeToInteract(config) {
-      const allImages = require.context("../src/assets/images/", true, /\.*$/);
-      let listImages = allImages.keys();
-      listImages = listImages.map(function (v) {
-        return v.replace(/\.\//, "");
-      });
+      // const allImages = require.context("../src/assets/images/", true, /\.*$/);
+      // let listImages = allImages.keys();
+      // listImages = listImages.map(function (v) {
+      //   return v.replace(/\.\//, "");
+      // });
       this.setting.totalBlock = config.totalBlock;
-      const inital_array = listImages.splice(0, this.setting.totalBlock / 2);
-      const cards_list = [...inital_array, ...inital_array];
+      const firstCards = Array.from(
+        { length: this.setting.totalBlock / 2 },
+        (_, i) => i + 1
+      );
+      // const inital_array = listImages.splice(0, this.setting.totalBlock / 2);
+      const cards_list = [...firstCards, ...firstCards];
       this.setting.cardsContent = shuffed(
         shuffed(shuffed(shuffed(cards_list)))
       );

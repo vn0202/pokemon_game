@@ -4,7 +4,9 @@
       v-for="(card, idx) in cardsContent"
       :key="idx"
       :ref="`card-${idx}`"
-      :img-back="`images/${card}`"
+      :img-back="
+        card >= 1 && card <= 21 ? `images/${card}.jpg` : `images/${card}.png`
+      "
       :card="{ index: idx, value: card }"
       :rate="rate"
       @onFlip="checkRule($event)"
