@@ -1,7 +1,12 @@
 <template>
   <div class="screen-result">
     <div class="screen-content">
-      <img src="../assets/images/7.jpeg" alt="" class="img-user" />
+      <img
+        src="../assets/images/9.jpg"
+        alt=""
+        class="img-user"
+        style="object-fit: contain"
+      />
       <h1>✨ Congratulations ✨</h1>
       <h3>✨ You are my sunshine ✨</h3>
 
