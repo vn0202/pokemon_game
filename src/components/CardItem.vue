@@ -94,7 +94,7 @@ export default {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-origin: border-box;
