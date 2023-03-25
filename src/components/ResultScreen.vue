@@ -5,7 +5,7 @@
         src="../assets/images/9.jpg"
         alt=""
         class="img-user"
-        style="object-fit: contain"
+        style="object-fit: fill"
       />
       <h1>✨ Congratulations ✨</h1>
       <h3>✨ You are my sunshine ✨</h3>
